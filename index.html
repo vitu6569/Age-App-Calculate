@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<main id="container">
+  <section id="content">
+    <div id="inputs">
+
+      <div class="inputDivs">
+        <label for="day" id="dayTag">Day</label>
+        <br>
+        <input type="number" class="inputNumber" id="day" placeholder="DD" min="1" max="31" required>
+        <p id="dayErrorMessage" class="errorMessage"></p>
+      </div>
+
+      <div class="inputDivs">
+        <label for="month" id="monthTag">Month</label>
+        <br>
+        <input type="number" class="inputNumber" id="month" placeholder="MM" min="1" max="30 " required>
+        <p id="monthErrorMessage" class="errorMessage"></p>
+      </div>
+
+      <div class="inputDivs">
+        <label for="year" id="yearTag">Year</label>
+        <br>
+        <input type="number" class="inputNumber" id="year" placeholder="YYYY" required>
+        <p id="yearErrorMessage" class="errorMessage"></p>
+      </div>
+
+    </div>
+
+    <div id="button">
+      <button type="submit" value="enviar" onclick="lifeTime()"></button>
+    </div>
+
+    <div id="results">
+      <div class="resultDivs">
+        <span id="yearsResult" class="resultNumbers">--</span>
+        <h1 id="years" class="dateFont">years</h1>
+      </div>
+
+      <div class="resultDivs">
+        <span id="monthsResult" class="resultNumbers">--</span>
+        <h1 id="monts" class="dateFont">months</h1>
+      </div>
+
+      <div class="resultDivs">        
+        <span id="daysResult" class="resultNumbers">--</span>
+        <h1 id="days" class="dateFont">days</h1>
+      </div>
+      
+    </div>
+  </section>
+</main>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
