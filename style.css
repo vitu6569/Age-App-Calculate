@@ -12,6 +12,7 @@
 --Off-white: hsl(0, 0%, 94%);
 --Light-grey: hsl(0, 0%, 86%);
 --Smokey-grey: hsl(0, 1%, 44%);
+--black: rgb(46, 45, 45);
 --Off-black: hsl(0, 0%, 8%);
 
 --font-family: "Poppins", sans-serif;
@@ -29,14 +30,14 @@
 */
 }
 body {
-    background-color: var(--Off-white);
+    background-color: var(--Off-black);
     min-width: 375px;
     padding: 16px;
     margin: 0;
 }
 
 #container {
-    margin: 60px auto;
+    margin: 75px auto;
     max-width: 840px;
     user-select: none;
 }
@@ -44,7 +45,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 32px;
-    background: var(--White);
+    background: var(--black);
     border-radius: 32px 32px 100px 32px;
 }
 #inputs {
@@ -56,7 +57,7 @@ body {
 label {
     font-size: small;
     font-family: var(--font-family);
-    color: var(--Smokey-grey);
+    color: var(--Light-grey);
     font-weight: 700;
     letter-spacing: 3px;
     text-transform: uppercase;
@@ -68,6 +69,7 @@ label {
     width: 150px;
     padding: 15px;
     border: 1px solid var(--Light-grey);
+    background-color: var(--black);
     border-radius: 5px;
     outline: none;
     transition: all 0.25s;
@@ -130,7 +132,7 @@ button:active {
     font-size: 120px;
     font-weight: 800;   
     font-style: italic;
-    color: var(--Off-black);  
+    color: var(--Smokey-grey);  
     margin: 0;
 }
 
