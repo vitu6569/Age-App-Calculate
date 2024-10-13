@@ -72,11 +72,12 @@ label {
     background-color: var(--black);
     border-radius: 5px;
     outline: none;
+    color: white;
     transition: all 0.25s;
 }
 .inputNumber:focus {
     transform: scale(1.1);
-    color: var(--Off-black);
+    color: var(--Off-white);
 }
 .errorMessage {
     font-family: var(--font-family);
